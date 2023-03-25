@@ -1,10 +1,10 @@
 FibToN <- function(n){
-  fib.vector <- c(1, 2)
+  fib.vector   <- c(1, 2)
   while (fib.vector[length(fib.vector)] < n) {
     new.number <- (fib.vector[length(fib.vector)]) + (fib.vector[length(fib.vector) - 1])
     fib.vector <- c(fib.vector, new.number)
   }
-  fib.vector <- fib.vector[-length(fib.vector)]
+  fib.vector   <- fib.vector[-length(fib.vector)]
 }
 
 fibonacci.vector <- FibToN(4000000)
